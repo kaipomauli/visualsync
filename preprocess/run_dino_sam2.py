@@ -19,6 +19,17 @@ from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
 import torchvision 
 from tqdm import tqdm
 from collections import defaultdict
+import logging
+import subprocess
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("dinoSam2.log"),  # saves to file
+        logging.StreamHandler()               # still prints to terminal
+    ]
+)
 
 """
 Hyper parameters
@@ -83,7 +94,8 @@ def get_dyn_objs_from_gpt_output(json_path):
             if "dynamic" in data:
                 return data["dynamic"]
     except Exception as e:
-        print(f"Error loading {json_path}: {str(e)}")
+        
+        logging.error(f"Error loading {json_path}: {str(e)}")
     return []
 
 def filter_boxes_by_size(boxes, image_size, max_area_percent=10):
@@ -111,11 +123,13 @@ def filter_boxes_by_size(boxes, image_size, max_area_percent=10):
     
     return keep_indices
 
+
 # Step 1: Group videos by sport and collect dynamic objects
 videos = sorted([x for x in os.listdir(INPUT_DIR)])[::-1]
 sport_dyn_objects = defaultdict(set)  # Dictionary to store dynamic objects by sport
 
-print("Step 1: Collecting objects that are actually moving by sport...")
+
+logging.info("Step 1: Collecting objects that are actually moving by sport...")
 for video in tqdm(videos, desc="Collecting moving objects"):
         
     sport = get_sport_from_video(video)
@@ -132,12 +146,14 @@ for video in tqdm(videos, desc="Collecting moving objects"):
 # Convert sets to sorted lists
 sport_dyn_objects = {sport: sorted(list(objects)) for sport, objects in sport_dyn_objects.items()}
 
-print(sport_dyn_objects)
 
+logging.info(sport_dyn_objects)
 # Step 2: Process each video with sport-specific dynamic objects
-print("\nStep 2: Processing videos with sport-specific moving objects...")
-for i, video in tqdm(enumerate(videos), desc="Processing videos"):
 
+logging.info("\nStep 2: Processing videos with sport-specific moving objects...")
+for i, video in tqdm(enumerate(videos), desc="Processing videos"):
+    logging.info(f"processing {i+1}th video in main folder")
+    
     work_dir = os.path.join(INPUT_DIR, video)
     image_dir_path = os.path.join(work_dir, "rgb")
     
@@ -158,7 +174,7 @@ for i, video in tqdm(enumerate(videos), desc="Processing videos"):
         prompt_source = "video-specific moving objects"
     
     text_input = ". ".join(dyn_objs) + "."
-    print(f"Processing {video} with {prompt_source} prompt containing {len(dyn_objs)} moving objects: {dyn_objs}")
+    logging.info(f"Processing {video} with {prompt_source} prompt containing {len(dyn_objs)} moving objects: {dyn_objs}")
     
     # Create output directories
     output_path_vis = os.path.join(work_dir, OUTPUT_DIR, "vis")
@@ -174,10 +190,25 @@ for i, video in tqdm(enumerate(videos), desc="Processing videos"):
             "text_input": text_input
         }, f, indent=4)
 
+        # Get all valid frames upfront
+    all_frames = [f for f in sorted(os.listdir(image_dir_path)) 
+                if f.endswith(".jpg") or f.endswith(".png")]
+    total_frames = len(all_frames)
+    milestones_logged = set()
+
+    logging.info(f"Starting {video} — {total_frames} frames to process")
     # Process each frame in the video
-    for image_file in sorted(os.listdir(image_dir_path)):
-        if not(image_file.endswith(".jpg") or image_file.endswith(".png")):
-            continue
+    latestAnnoted=None
+    for frame_idx, image_file in enumerate(all_frames):    
+    # Progress logging at 25, 50, 75%
+        progress = (frame_idx / total_frames) * 100
+        for milestone in [25, 50, 75]:
+            if progress >= milestone and milestone not in milestones_logged:
+                logging.info(f"{video} — {milestone}% complete ({frame_idx}/{total_frames} frames)")
+                
+                logging.info(f"Latest annoted file --> {latestAnnoted}")
+                
+                milestones_logged.add(milestone)
 
         full_image_path = os.path.join(image_dir_path, image_file)
 
@@ -305,6 +336,7 @@ for i, video in tqdm(enumerate(videos), desc="Processing videos"):
             color_mask = cv2.cvtColor(color_mask, cv2.COLOR_RGB2BGR)
 
             cv2.imwrite(os.path.join(output_path_vis, image_file), annotated_frame) # VISUALIZATION
+            latestAnnoted=os.path.join(output_path_vis, image_file)
             image_file = image_file.replace(".jpg", ".png")
             cv2.imwrite(os.path.join(output_path_mask, image_file), color_mask)
             with open(os.path.join(output_path_mask, image_file.replace(".png", ".json")), "w") as f:
@@ -317,3 +349,23 @@ for i, video in tqdm(enumerate(videos), desc="Processing videos"):
             cv2.imwrite(os.path.join(output_path_mask, image_file), np.zeros(image.shape, dtype=np.uint8))
             with open(os.path.join(output_path_mask, image_file.replace(".png", ".json")), "w") as f:
                 json.dump([], f)
+
+    logging.info(f"Combining folder: {output_path_vis}")
+    result = subprocess.run(
+    [
+        "python3", "scripts/combineImagesInFolder.py",
+        "--input_dir", output_path_vis,
+        "--output_path", os.path.join(output_path_vis,video+"_vis.mp4"),
+        "--fps", "30",
+        "--image_pattern", "frame_%06d.jpg",
+        "--crf", "18"
+    ],
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+    text=True
+    )
+
+    if result.returncode != 0:
+        logging.error(f"Error: {result.stderr}")
+    else:
+        logging.info(f"Done: {result.stdout}")

@@ -1,0 +1,177 @@
+2026-03-21 04:48:02,003 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis at 30fps
+2026-03-21 04:48:12,684 - ERROR - FFmpeg failed:
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.3.0 (conda-forge gcc 14.3.0-16)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --enable-libshaderc --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/pkg-config
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[image2 @ 0x5555555f8240] Could find no file with path '/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/%06d.jpg' and index in the range 0-4
+[in#0 @ 0x5555555f7f00] Error opening input: No such file or directory
+Error opening input file /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/%06d.jpg.
+Error opening input files: No such file or directory
+
+2026-03-21 04:51:53,249 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis at 30fps
+2026-03-21 04:52:30,459 - ERROR - FFmpeg failed:
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.3.0 (conda-forge gcc 14.3.0-16)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --enable-libshaderc --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/pkg-config
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, image2, from '/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg':
+  Duration: 00:01:47.30, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 2048x2048 [SAR 1:1 DAR 1:1], 30 fps, 30 tbr, 30 tbn
+[AVFormatContext @ 0x5555555fefc0] Unable to choose an output format for '/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 0x5555555fee80] Error initializing the muxer for /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis: Invalid argument
+Error opening output file /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis.
+Error opening output files: Invalid argument
+
+2026-03-21 04:54:41,345 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4 at 30fps
+2026-03-21 04:54:46,199 - ERROR - FFmpeg failed:
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.3.0 (conda-forge gcc 14.3.0-16)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --enable-libshaderc --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/pkg-config
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, image2, from '/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg':
+  Duration: 00:01:47.30, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 2048x2048 [SAR 1:1 DAR 1:1], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[swscaler @ 0x155538014a40] deprecated pixel format used, make sure you did set range correctly
+[h264_nvenc @ 0x5555556076c0] OpenEncodeSessionEx failed: unsupported device (2): (no details)
+[h264_nvenc @ 0x5555556076c0] No capable devices found
+[vost#0:0/h264_nvenc @ 0x5555555ffa00] [enc:h264_nvenc @ 0x555555607600] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 0x5555556017c0] Error sending frames to consumers: Generic error in an external library
+[vf#0:0 @ 0x5555556017c0] Task finished with error code: -542398533 (Generic error in an external library)
+[vf#0:0 @ 0x5555556017c0] Terminating thread with return code -542398533 (Generic error in an external library)
+[vost#0:0/h264_nvenc @ 0x5555555ffa00] [enc:h264_nvenc @ 0x555555607600] Could not open encoder before EOF
+[vost#0:0/h264_nvenc @ 0x5555555ffa00] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/h264_nvenc @ 0x5555555ffa00] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 0x5555555fee80] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.36    
+Conversion failed!
+
+2026-03-21 04:58:34,030 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 04:58:34,031 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg
+2026-03-21 05:02:43,392 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 05:02:43,392 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg
+2026-03-21 05:02:43,393 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4 at 30fps
+2026-03-21 05:02:44,538 - ERROR - FFmpeg failed:
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.3.0 (conda-forge gcc 14.3.0-16)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --enable-libshaderc --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1769712549653/_build_env/bin/pkg-config
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, image2, from '/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg':
+  Duration: 00:01:47.30, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 2048x2048 [SAR 1:1 DAR 1:1], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[swscaler @ 0x155538014a40] deprecated pixel format used, make sure you did set range correctly
+[h264_nvenc @ 0x555555607440] OpenEncodeSessionEx failed: unsupported device (2): (no details)
+[h264_nvenc @ 0x555555607440] No capable devices found
+[vost#0:0/h264_nvenc @ 0x5555555ff040] [enc:h264_nvenc @ 0x5555555fd300] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 0x555555601980] Error sending frames to consumers: Generic error in an external library
+[vf#0:0 @ 0x555555601980] Task finished with error code: -542398533 (Generic error in an external library)
+[vf#0:0 @ 0x555555601980] Terminating thread with return code -542398533 (Generic error in an external library)
+[vost#0:0/h264_nvenc @ 0x5555555ff040] [enc:h264_nvenc @ 0x5555555fd300] Could not open encoder before EOF
+[vost#0:0/h264_nvenc @ 0x5555555ff040] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/h264_nvenc @ 0x5555555ff040] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 0x5555555fc980] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.84    
+Conversion failed!
+
+2026-03-21 05:22:59,111 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 05:22:59,112 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg
+2026-03-21 05:22:59,113 - INFO - Total frames: 3219
+2026-03-21 05:22:59,113 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4 at 30fps
+2026-03-21 05:22:59,113 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4
+2026-03-21 05:23:04,780 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 05:23:04,780 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 05:24:09,935 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4
+2026-03-21 06:30:18,032 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 06:30:18,033 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg
+2026-03-21 06:30:18,033 - INFO - Total frames: 10
+2026-03-21 06:30:18,034 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4 at 30fps
+2026-03-21 06:30:18,034 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 06:30:28,580 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 06:30:28,581 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 06:30:29,343 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 06:32:21,407 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 06:32:21,409 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg
+2026-03-21 06:32:21,409 - INFO - Total frames: 10
+2026-03-21 06:32:21,409 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4 at 30fps
+2026-03-21 06:32:21,409 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 06:32:22,194 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 06:32:22,194 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 06:32:22,698 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 06:51:22,569 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 06:51:22,569 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg
+2026-03-21 06:51:22,569 - INFO - Total frames: 10
+2026-03-21 06:51:22,569 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4 at 30fps
+2026-03-21 06:51:22,569 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 06:51:35,137 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 06:51:35,138 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 06:51:35,780 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam5/gsam2/vis/scene1_cam5_vis.mp4
+2026-03-21 07:08:53,952 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 07:08:53,953 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg
+2026-03-21 07:08:53,953 - INFO - Total frames: 3219
+2026-03-21 07:08:53,953 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4 at 30fps
+2026-03-21 07:08:53,953 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4
+2026-03-21 07:09:08,370 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 07:09:08,371 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 07:09:58,579 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4
+2026-03-21 07:26:03,900 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 07:26:03,901 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis/frame_%06d.jpg
+2026-03-21 07:26:03,901 - INFO - Total frames: 3219
+2026-03-21 07:26:03,901 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis/scene1_cam3_vis.mp4 at 30fps
+2026-03-21 07:26:03,901 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis/scene1_cam3_vis.mp4
+2026-03-21 07:26:18,986 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 07:26:18,986 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 07:27:12,737 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/gsam2/vis/scene1_cam3_vis.mp4
+2026-03-21 07:42:20,648 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 07:42:20,648 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis/frame_%06d.jpg
+2026-03-21 07:42:20,648 - INFO - Total frames: 3219
+2026-03-21 07:42:20,648 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis/scene1_cam2_vis.mp4 at 30fps
+2026-03-21 07:42:20,648 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis/scene1_cam2_vis.mp4
+2026-03-21 07:42:37,000 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 07:42:37,000 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 07:43:33,623 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/gsam2/vis/scene1_cam2_vis.mp4
+2026-03-21 07:59:14,062 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-21 07:59:14,062 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis/frame_%06d.jpg
+2026-03-21 07:59:14,062 - INFO - Total frames: 3219
+2026-03-21 07:59:14,062 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis/scene1_cam1_vis.mp4 at 30fps
+2026-03-21 07:59:14,062 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis/scene1_cam1_vis.mp4
+2026-03-21 07:59:31,350 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-21 07:59:31,350 - WARNING - GPU error was:
+Conversion failed!
+2026-03-21 08:00:25,749 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/gsam2/vis/scene1_cam1_vis.mp4

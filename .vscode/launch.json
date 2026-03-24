@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+       {
+            "name": "Run run_dino_sam2 with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/preprocess/run_dino_sam2.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--workdir", "~/scratch/ProjectsData/visualSync/Ryker","--output-dir", "gsam2","--input-dir", "gpt_video","--sam2-checkpoint", "${workspaceFolder}/preprocess/pretrained/sam2.1_hiera_large.pt"]
+        },
+       
+        {
+            "name": "Run extractFrames with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/extractFrames.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/prep3.mp4","--out","~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/rgb","--fps","30"]
+        },
+        {
+            "name": "Run combineImages with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/combineImagesInFolder.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--input_dir","~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis","--output_path","~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/gsam2/vis/scene1_cam4_vis.mp4","--fps","30"]
+        },
+        {
+            "name": "Run DEVA with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/Tracking-Anything-with-DEVA/evaluation/eval_with_detections.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--workdir","~/scratch/ProjectsData/visualSync/Ryker","--input-dir","gsam2","--output-dir","deva","--dataset","demo","--temporal_setting","semionline","--detection_every","2","--num_voting_frames","2","--amp"]
+        }
+    ]
+}
