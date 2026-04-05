@@ -95,6 +95,7 @@ def extract_frames(
         scale_h: int = None,  # resize height
         use_cuda: bool = True,
         verbose: bool = True,
+        pattern: str = "frame_%06d",
 ):
     """
     Extract frames from video_path.
@@ -196,7 +197,7 @@ def extract_frames(
         cmd += ["-compression_level", str(quality)]
  
     # Output pattern: frame_000001.jpg etc.
-    out_pattern = os.path.join(out_dir, f"frame_%06d.{fmt}")
+    out_pattern = os.path.join(out_dir, f"{pattern}.{fmt}")
     cmd.append(out_pattern)
  
     if verbose:
@@ -221,6 +222,7 @@ def extract_frames(
                 scale_h=scale_h,
                 use_cuda=False,  # fallback
                 verbose=verbose,
+                pattern=pattern
             )
         raise
  
@@ -245,6 +247,10 @@ def main():
                         help="Quality: jpg 2-31 lower=better (default 2), png 0-9")
     parser.add_argument("--width", type=int, help="Scale output width")
     parser.add_argument("--height", type=int, help="Scale output height")
+    parser.add_argument("--pattern", "-p", default="frame_%06d",
+                        help="Frame filename pattern with printf placeholder "
+                             "(default: 'frame_%%06d'). "
+                             "Examples: 'rgb_%%06d', 'cam1_%%04d'")
     parser.add_argument("--no-cuda", action="store_true", help="Disable CUDA GPU acceleration")
     parser.add_argument("--quiet", action="store_true", help="Suppress output")
     args = parser.parse_args()
@@ -262,6 +268,7 @@ def main():
         scale_h=args.height,
         use_cuda=not args.no_cuda,
         verbose=not args.quiet,
+        pattern=args.pattern,
     )
  
  

@@ -14,4 +14,4 @@ cd $SLURM_SUBMIT_DIR
 
 module load anaconda3
 conda activate visualsync
-bash task_runDeva.sh
+bash task_CombineFolders.sh

@@ -1,0 +1,57 @@
+---------------------------------------
+Begin Slurm Prolog: Mar-23-2026 21:39:44
+Job ID:    4519734
+User ID:   gbatungwanayo3
+Account:   coc
+Job name:  dino_sam2
+Partition: ice-gpu
+QOS:       coc-ice
+---------------------------------------
+2026-03-23 21:40:00,888 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-23 21:40:00,888 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations/frame_%06d.jpg
+2026-03-23 21:40:00,888 - INFO - Total frames: 3219
+2026-03-23 21:40:00,888 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations/scene1_cam1_Deva_vis.mp4 at 30fps
+2026-03-23 21:40:00,888 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations/scene1_cam1_Deva_vis.mp4
+2026-03-23 21:40:14,943 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-23 21:40:14,944 - WARNING - GPU error was:
+Conversion failed!
+2026-03-23 21:41:13,450 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/deva/Visualizations/scene1_cam1_Deva_vis.mp4
+2026-03-23 21:41:13,562 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-23 21:41:13,562 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations/frame_%06d.jpg
+2026-03-23 21:41:13,562 - INFO - Total frames: 3219
+2026-03-23 21:41:13,562 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations/scene1_cam2_Deva_vis.mp4 at 30fps
+2026-03-23 21:41:13,562 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations/scene1_cam2_Deva_vis.mp4
+2026-03-23 21:41:14,881 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-23 21:41:14,881 - WARNING - GPU error was:
+Conversion failed!
+2026-03-23 21:42:14,396 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/deva/Visualizations/scene1_cam2_Deva_vis.mp4
+2026-03-23 21:42:14,504 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-23 21:42:14,504 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations/frame_%06d.jpg
+2026-03-23 21:42:14,504 - INFO - Total frames: 3219
+2026-03-23 21:42:14,504 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations/scene1_cam3_Deva_vis.mp4 at 30fps
+2026-03-23 21:42:14,504 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations/scene1_cam3_Deva_vis.mp4
+2026-03-23 21:42:15,746 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-23 21:42:15,746 - WARNING - GPU error was:
+Conversion failed!
+2026-03-23 21:43:13,378 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/deva/Visualizations/scene1_cam3_Deva_vis.mp4
+2026-03-23 21:43:13,449 - INFO - First 3 files: ['frame_000001.jpg', 'frame_000002.jpg', 'frame_000003.jpg']
+2026-03-23 21:43:13,449 - INFO - Pattern used: /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations/frame_%06d.jpg
+2026-03-23 21:43:13,449 - INFO - Total frames: 3219
+2026-03-23 21:43:13,449 - INFO - Recombining frames from /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations → /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations/scene1_cam4_Deva_vis.mp4 at 30fps
+2026-03-23 21:43:13,449 - INFO - Running: ffmpeg -y -framerate 30 -i /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations/frame_%06d.jpg -c:v h264_nvenc -preset p4 -rc:v vbr -cq 18 -b:v 0 -pix_fmt yuv420p /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations/scene1_cam4_Deva_vis.mp4
+2026-03-23 21:43:14,544 - WARNING - GPU encoding failed — falling back to CPU encoding (libx264)
+2026-03-23 21:43:14,545 - WARNING - GPU error was:
+Conversion failed!
+2026-03-23 21:44:07,600 - INFO - Video saved (CPU encoded) to /home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/deva/Visualizations/scene1_cam4_Deva_vis.mp4
+---------------------------------------
+Begin Slurm Epilog: Mar-23-2026 21:44:07
+Job ID:        4519734
+User ID:       gbatungwanayo3
+Account:       coc
+Job name:      dino_sam2
+Resources:     cpu=8,gres/gpu:h200=1,mem=64G,node=1
+Rsrc Used:     cput=00:35:04,vmem=0,walltime=00:04:23,mem=6263712K,energy_used=0
+Partition:     ice-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-017-9-0
+---------------------------------------

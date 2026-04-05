@@ -26,7 +26,7 @@
             "env": {
                 "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
             },
-            "args": ["~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/prep3.mp4","--out","~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/rgb","--fps","30"]
+            "args": ["~/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/prep3.mp4","--out","~/scratch/ProjectsData/visualSync/Ryker/VGGT/Images","--fps","30","--pattern","scene1_cam4_%06d"]
         },
         {
             "name": "Run combineImages with Arguments",
@@ -49,6 +49,59 @@
                 "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
             },
             "args": ["--workdir","~/scratch/ProjectsData/visualSync/Ryker","--input-dir","gsam2","--output-dir","deva","--dataset","demo","--temporal_setting","semionline","--detection_every","2","--num_voting_frames","2","--amp"]
+        },
+        {
+            "name": "Run SAM3",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/runSam3.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            }
+            
+        },
+        {
+            "name": "Run VGGT viser",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/vggt/demo_viser.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--image_folder","~/scratch/ProjectsData/visualSync/Ryker/VGGT/Images2"]
+            
+        },
+        {
+            "name": "Run VGGT viser2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/vggt/demo_viser.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--image_folder","~/scratch/ProjectsData/visualSync/Ryker/VGGT/Images"]
+            
+        },
+        {
+            "name": "Run VGGT colmap",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/vggt/demo_colmap.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--scene_dir","~/scratch/ProjectsData/visualSync/Ryker/VGGT"]
+            
         }
+
+
     ]
 }
