@@ -98,9 +98,23 @@
             "env": {
                 "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
             },
-            "args": ["--scene_dir","~/scratch/ProjectsData/visualSync/Ryker/VGGT"]
+            "args": ["--scene_dir","~/scratch/ProjectsData/visualSync/Ryker/VGGT","--conf_thres_value","50"]
+            
+        },
+        {
+            "name": "Run testImports",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/testimports.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            }
+          
             
         }
+
 
 
     ]

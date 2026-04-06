@@ -1,0 +1,5 @@
+preprocess/pretrained/modelVGGT.pt
+preprocess/pretrained/sam2.1_hiera_large.pt
+preprocess/pretrained/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth
+test_output.mp4
+combineImages.log
