@@ -113,6 +113,54 @@
             }
           
             
+        },
+        {
+            "name": "Run coTracker",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/co-tracker/run_cotracker_v5.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}"
+            },
+            "args": ["--scene_dir","~/scratch/ProjectsData/visualSync/Ryker/VGGT","--conf_thres_value","50"]
+            
+        },
+        {
+            "name": "Run mast3r",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/mast3r/runMast3r.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}",
+                "PYTHONPATH": "/home/hice1/gbatungwanayo3/scratch/visualsync/mast3r:/home/hice1/gbatungwanayo3/scratch/visualsync/mast3r/dust3r:/home/hice1/gbatungwanayo3/scratch/visualsync/mast3r/dust3r"
+            },
+            "args": ["--videos",
+                    "/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam1/CAM1_GX010106.MP4",
+                    "/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam2/CAM2_GX010092.MP4",
+                    "/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam3/CAM3_GX010033.MP4",
+                    "/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/scene1_cam4/CAM4_GX010033.MP4",
+                "--cam_names", "cam1", "cam2", "cam3", "cam4",
+                "--weights","preprocess/pretrained/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth",
+                "--save_dir", "/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/mast3r_output",
+                "--vis"]
+            
+        },
+        {
+            "name": "Run mast3r demo",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/mast3r/demo.py",
+            "console": "integratedTerminal",
+            "python": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin/python",
+            "env": {
+                "PATH": "/home/hice1/gbatungwanayo3/.conda/envs/visualsync/bin:${env:PATH}",                
+            },
+            "args": ["--weights","preprocess/pretrained/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth","--tmp_dir","/home/hice1/gbatungwanayo3/scratch/ProjectsData/visualSync/Ryker/mast3rdemo","--share"]
+            
         }
 
 
